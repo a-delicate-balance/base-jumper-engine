@@ -4,5 +4,5 @@
 3. Create a file I/O manager.
 
 I/O:
-binary - saves
-JSON-like - engine scene manager , engine properties manager, engine script manager
+1. binary - saves
+2. JSON-like - engine scene manager , engine properties manager, engine script manager
