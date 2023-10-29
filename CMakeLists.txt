@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(g_engine)
+project(base-jumper-engine)
 
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c++17 -O2")
