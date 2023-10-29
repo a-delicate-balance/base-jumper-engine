@@ -1,3 +1,0 @@
-/home/parth/Projects/shadow-moses-engine/build/CMakeFiles/g_engine.dir
-/home/parth/Projects/shadow-moses-engine/build/CMakeFiles/edit_cache.dir
-/home/parth/Projects/shadow-moses-engine/build/CMakeFiles/rebuild_cache.dir
