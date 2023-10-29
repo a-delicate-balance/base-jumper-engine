@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/parth/Projects/shadow-moses-engine/build",
+  "command": "/usr/bin/g++ -I/home/parth/Projects/shadow-moses-engine/include -g -o CMakeFiles/g_engine.dir/src/engine.cpp.o -c /home/parth/Projects/shadow-moses-engine/src/engine.cpp",
+  "file": "/home/parth/Projects/shadow-moses-engine/src/engine.cpp",
+  "output": "CMakeFiles/g_engine.dir/src/engine.cpp.o"
+},
+{
+  "directory": "/home/parth/Projects/shadow-moses-engine/build",
+  "command": "/usr/bin/g++ -I/home/parth/Projects/shadow-moses-engine/include -g -o CMakeFiles/g_engine.dir/src/graphics.cpp.o -c /home/parth/Projects/shadow-moses-engine/src/graphics.cpp",
+  "file": "/home/parth/Projects/shadow-moses-engine/src/graphics.cpp",
+  "output": "CMakeFiles/g_engine.dir/src/graphics.cpp.o"
+}
+]
