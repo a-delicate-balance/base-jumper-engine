@@ -1,18 +1,38 @@
-#include "../include/include.hpp"
-#include "../include/graphics.hpp"
+#include "../external/glfw/include/GLFW/glfw3.h"
 
 
-gfx_window::gfx_window(unsigned short w, unsigned short h, char* title, bool full_screen) : width{w}, height{h}, title{title}, full_screen{full_screen}
+int debug_exec_gfx(void)
 {
-    glfwInit();
-    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-    window = glfwCreateWindow(width, height, title, nullptr, nullptr);
-    // createWindow();
-}
+    GLFWwindow* window;
 
-gfx_window::~gfx_window()
-{
-    glfwDestroyWindow(window);
+    /* Initialize the library */
+    if (!glfwInit())
+        return -1;
+
+    /* Create a windowed mode window and its OpenGL context */
+    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    if (!window)
+    {
+        glfwTerminate();
+        return -1;
+    }
+
+    /* Make the window's context current */
+    glfwMakeContextCurrent(window);
+
+    /* Loop until the user closes the window */
+    while (!glfwWindowShouldClose(window))
+    {
+        /* Render here */
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        /* Swap front and back buffers */
+        glfwSwapBuffers(window);
+
+        /* Poll for and process events */
+        glfwPollEvents();
+    }
+
     glfwTerminate();
-}
+    return 0;
+} 
